@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/Index.css">
+  <link rel="stylesheet" href="assets/Navbar.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+  <Header class="position-absolute top-0 w-100">
+    <Navbar class="navbar bg-dark p-0">
+      <div class="container-lg">
+        <div class="d-flex justify-content-between p-lg-0 p-3 w-100">
+          <div class="logo fs-1">
+            <a href="" class="text-decoration-none text-white"><span class=""
+                style="color: chartreuse;">Learn</span>Bit</a>
+          </div>
+          <div class="mobile-view-icon d-lg-none d-block">
+            <i class="bi bi-list fs-2 text-white" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+              aria-controls="offcanvasExample"></i>
+          </div>
+          <ul class="navlinks  gap-3 mb-0 d-lg-flex d-none" id="navbarSupportedContent">
+            <li class="list-unstyled p-3"><a href="" class="navlinks-link text-decoration-none fs-5 text-white">Home</a>
+            </li>
+            <li class="dropdown-list list-unstyled p-3">
+              <a class="navlinks-link fs-5 text-white text-decoration-none" data-bs-toggle="collapse"
+                aria-labelledby="dropdownMenuButton1" data-bs-target="#dropdown-content">Courses <i
+                  class="bi bi-chevron-double-down"></i></a>
+              <ul class="collapse navbar-collapse position-absolute top-100 p-2 pt-0 bg-dark" id="dropdown-content">
+                <button class="btn d-block w-100 m-1  text-white fs-6 btn" data-bs-toggle="modal"
+                  data-bs-target="#FullStackDeveloperModal">Full Stack Developer</button>
+                  <button class="btn d-block w-100 m-1  text-white fs-6 btn" data-bs-toggle="modal"
+                  data-bs-target="#DataScienceModal">Data Science</button>
+                  <button class="btn d-block w-100 m-1  text-white fs-6 btn" data-bs-toggle="modal"
+                  data-bs-target="#CyberSecurityModal">Cyber Security</button>
+                  <button class="btn d-block w-100 m-1  text-white fs-6 btn" data-bs-toggle="modal"
+                  data-bs-target="#OtherProgrammingModal">Other Programming Languages</button>
+              </ul>
+            </li>
+            <li class="list-unstyled p-3"><a href="" class="navlinks-link text-decoration-none fs-5 text-white">Home</a>
+            </li>
+            <li class="list-unstyled p-3"><a href="" class="navlinks-link text-decoration-none fs-5 text-white">Home</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </Navbar>
+    <div class="offcanvas offcanvas-start w-75" tabindex="-1" id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header bg-dark">
+        <i class="bi bi-arrow-left-circle-fill fs-4" data-bs-dismiss="offcanvas" aria-label="Close"
+          style="color: chartreuse;"></i>
+      </div>
+      <div class="offcanvas-body">
+              <ul class="navlinks  gap-3 mb-0 ps-0 d-lg-flex d-block" id="navbarSupportedContent">
+                <li class="list-unstyled p-3"><a href="" class="navlinks-link text-decoration-none fs-5 text-black">Home</a>
+                </li>
+                <li class="dropdown-list list-unstyled p-3">
+                  <a class="navlinks-link fs-5 text-black text-decoration-none" data-bs-toggle="collapse"
+                    aria-labelledby="dropdownMenuButton1" data-bs-target="#dropdown-content">Courses <i
+                      class="bi bi-chevron-double-down"></i></a>
+                  <ul class="collapse navbar-collapse top-100 p-2 pt-0" id="dropdown-content">
+                    <button class="btn d-block w-100 m-1 bg-white text-nowrap  text-black fs-6 btn" data-bs-toggle="modal"
+                      data-bs-target="#FullStackDeveloperModal">Full Stack Developer</button>
+                      <button class="btn d-block w-100 m-1 bg-white text-nowrap  text-black fs-6 btn" data-bs-toggle="modal"
+                      data-bs-target="#DataScienceModal">Data Science</button>
+                      <button class="btn d-block w-100 m-1 bg-white text-nowrap  text-black fs-6 btn" data-bs-toggle="modal"
+                      data-bs-target="#CyberSecurityModal">Cyber Security</button>
+                      <button class="btn d-block w-100 m-1 bg-white   text-black fs-6 btn" data-bs-toggle="modal"
+                      data-bs-target="#OtherProgrammingModal">Other Programming Languages</button>
+                  </ul>
+                </li>
+                <li class="list-unstyled p-3"><a href="" class="navlinks-link text-decoration-none fs-5 text-black">Home</a>
+                </li>
+                <li class="list-unstyled p-3"><a href="" class="navlinks-link text-decoration-none fs-5 text-black">Home</a>
+                </li>
+    
+              </ul>
+      </div>
+    </div>
+  </Header>
+  <!-- modal -->
+  <div class="modal fade bg-black text-white " id="FullStackDeveloperModal" tabindex="-1"
+    aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog mw-100 w-75">
+      <div class="modal-content bg-black border-lg">
+        <!-- <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div> -->
+        <div class="modal-body">
+          <div class="container ps-0 ">
+            <h1 class="fs-3">1) What is Full Stack Developer :- </h1>
+            <p><span class="ms-5 ps-5 fs-6">A </span> developer is like a web building contractor, handling both the
+              visible and hidden parts of a
+              website or app. Imagine a house: the front door, walls, and paint (visible to users) are the
+              front-end,
+              while the plumbing, electrical wiring, and foundation (hidden but crucial) are the back-end.
+              Full-stack
+              developers master both sides, using different tools and languages for each. They can build everything
+              from
+              user interfaces to databases, making them versatile and valuable assets in any development team.
+
+            </p>
+
+            <!-- Front end nav-tabs -->
+            <h1 class="fs-3">2) Roadmap to Full-Stack Development: A Step-by-Step Guide:- </h1>
+            <ul class="nav nav-pills mb-3 w-100 justify-content-around mt-3 flex-nowrap" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="btn btn-outline-warning active w-100" id="pills-home-tab" data-bs-toggle="pill"
+                  data-bs-target="#Front-end" type="button" role="tab" aria-controls="pills-home"
+                  aria-selected="true">Front-end Developer</button>
+              </li>
+              <li class="nav-item" role="presentation">
+
+                <button class="btn btn-outline-warning w-100" id="pills-profile-tab" data-bs-toggle="pill"
+                  data-bs-target="#back-end" type="button" role="tab" aria-controls="pills-profile"
+                  aria-selected="false">back-end
+                  Developer</button>
+              </li>
+            </ul>
+            <div class="tab-content mb-lg-0 pb-5 pb-lg-5 mb-5" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="Front-end" role="tabpanel" aria-labelledby="pills-home-tab">
+                <h5> 1: HTML
+                  Fundamentals (2-4 weeks)</h5>
+
+                Basics: Imagine the web page as a building. You'll learn the basic building blocks (like walls and
+                doors) using HTML: headings, paragraphs, lists, images, and more.
+                Advanced Features: Now, explore forms for collecting information, tables for organizing data,
+                multimedia elements like videos or audio, and semantic HTML for clearer structure.
+                Resources: W3Schools HTML Tutorial, FreeCodeCamp HTML course
+                <br>
+                <h5> 2: CSS Styling (4-6 weeks)</h5>
+
+                Styling: It's like painting and decorating! Learn how to target elements using IDs, classes, and
+                attributes to control colors, fonts, backgrounds, borders, and more.
+                Layout & Positioning: Arrange elements like furniture in a room. Understand box model, positioning
+                techniques (flexbox and grid), and how to move things around.
+                Advanced Techniques: Add animations, special effects, and responsiveness to different screen sizes
+                using CSS.
+                Resources: W3Schools CSS Tutorial, MDN Web Docs CSS Introduction
+                <br>
+                <h5> 3: JavaScript Interactivity (6-8 weeks)</h5>
+
+                JavaScript Basics: This is the magic that makes websites interactive. Learn variables, data types,
+                and how to control program flow.
+                Bringing the Page to Life: Understand the Document Object Model (DOM) to change and move elements on
+                the page, creating buttons, menus, and more.
+                Events & Functions: Learn how users interact with the page (clicking, typing) and how to respond
+                with different functions.
+                Advanced Concepts: Explore objects, modules, and popular libraries like jQuery to write more complex
+                JavaScript code.
+                Resources: MDN Web Docs JavaScript Guide, FreeCodeCamp JavaScript course
+                <br>
+                <h5> 4: Front-End Frameworks (Optional, 8-12 weeks)</h5>
+
+                Choose Your Toolkit: Pick a helper like React, Angular, or Vue.js to build larger web applications
+                efficiently.
+                Master the Basics: Learn the core principles and syntax of your chosen framework.
+                Build Reusable Components: Create modular pieces like Lego blocks to quickly assemble complex
+                interfaces.
+                Managing Data & State: Understand how to handle information flow and keep track of things within the
+                app.
+                Testing & Deployment: Make sure your app works well and learn how to launch it online for everyone
+                to see.
+                Resources: Official documentation and tutorials for your chosen framework
+              </div>
+              <div class="tab-pane fade" id="back-end" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <h5>Phase 1:
+                  Back-End
+                  Fundamentals (6-8 weeks)</h5>
+
+                Pick Your Tool: Imagine a toolbox with different languages like Python, Java, or Ruby on Rails.
+                Choose the one that suits your interests and career goals.
+                Learning the Language: It's like learning a new language! You'll understand how the language works,
+                its basic building blocks, and how to control the flow of information.
+                Variables & Functions: Think of these as boxes to store information and tools to do specific tasks
+                within your code.
+                Input & Output: This is how your program interacts with the world. Learn how to understand what
+                users give it (input) and how to respond (output).
+                Object-Oriented Programming (optional): In some languages, you can organize your code like building
+                blocks with classes and objects. This can make your code more structured and reusable.
+                Resources: Think of these as helpful guides and teachers. Use official documentation, online
+                courses, and tutorials to learn more about your chosen language.<br><br>
+                <h5> 2: Web Development Frameworks (Optional, 8-10 weeks)</h5>
+
+                Power Up Your Tools: Imagine using special tools in your toolbox to build more complex things.
+                Frameworks like Django, Spring Boot, or Ruby on Rails can help you build web applications faster and
+                easier.
+                Framework Basics: Learn the key features and how things are organized within your chosen framework.
+                Routing & Controllers: Think of these as traffic signs and tollbooths. They direct users to
+                different parts of your application and handle requests efficiently.
+                Connecting to a Database: Imagine storing information in a filing cabinet. This is where you'll
+                learn to connect your application to a database like MySQL or PostgreSQL to store and retrieve data.
+                Creating Dynamic Content: This is like making a website interactive. You'll learn how to use
+                template engines to display information that changes based on user input or other factors.
+                Security: Just like locking your house, you'll learn how to keep your application secure by
+                implementing authentication and authorization.
+                Resources: Look for framework documentation, tutorials, and online communities to get help and learn
+                more advanced techniques.<br><br>
+                <h5> 3: Advanced Back-End Concepts (Ongoing)</h5>
+
+                Building APIs: Imagine sharing information with other applications. You'll learn how to build APIs
+                (Application Programming Interfaces) to connect your application with other services.
+                Deployment & Scaling: Think of launching your application to the world. You'll learn how to deploy
+                it to a server and scale it up if it gets more users.
+                Testing & Debugging: Like checking for errors in a car, you'll learn how to write tests to ensure
+                your code works as expected and how to fix problems if they occur.
+                Performance Optimization: Imagine making your car run faster. You'll learn how to optimize your
+                application for better speed and efficiency.
+                Advanced Topics: As you progress, you can explore other tools and techniques like microservices,
+                cloud computing, and message queues, depending on your interests and goals.
+                Resources: Articles, tutorials, and online communities can help you delve deeper into these advanced
+                back-end concepts.
+              </div>
+            </div>
+            
+          </div>
+          
+        </div>
+        
+        
+      </div>
+      
+    </div>
+    <!-- Nav Tabs -->
+    
+    <div class="modal-footer-buttons d-lg-flex d-block position-fixed bottom-0 justify-content-around w-100">
+      <button type="button" class="btn btn-warning  w-50 mb-2 mb-lg-0" data-bs-dismiss="modal">Go To Learn Full Stack Language</button>
+      <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+    
+    </div>
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

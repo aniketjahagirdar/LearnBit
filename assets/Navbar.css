@@ -1,0 +1,145 @@
+:root{
+    --uniqColor:chartreuse;
+}
+
+
+Navbar .navlinks li:hover{
+    background: var(--uniqColor);
+    /* letter-spacing: 1px; */
+    
+}
+Navbar .navlinks .navbar-collapse a{
+    transition: 0.5s;
+}
+/* Navbar .navlinks .navbar-collapse span:hover{
+    background: var(--uniqColor);
+    color: black !important;
+} */
+
+Navbar .navlinks li{
+    transition: 0.5s;
+}
+
+Navbar .navlinks li:hover .navlinks-link{
+    color: black !important;
+   
+}
+
+Navbar .dropdown-list .navbar-collapse a{
+    /* background: var(--uniqColor); */
+    color: white;
+}
+Navbar .dropdown-list button{
+    background: var(--uniqColor) !important;
+    background: transparent !important ;
+    border: 2px solid var(--uniqColor) !important;
+
+}
+Navbar .dropdown-list button:hover{
+       background: var(--uniqColor) !important;
+       color: black !important;
+
+    /* background: transparent !important ;
+    border: 1px solid var(--uniqColor) !important; */
+
+}
+Navbar .dropdown-list button:focus{
+    outline: none; 
+    border: none;
+    box-shadow:none !important;
+    
+}
+
+
+
+Navbar .dropdown-list .navbar-collapse{
+    margin-left: 0px !important;
+}
+
+
+/* offcanvas */
+.offcanvas .navlinks li:hover{
+    background: var(--uniqColor);
+    /* letter-spacing: 1px; */
+    
+}
+.offcanvas .navlinks .collapse a{
+    transition: 0.5s;
+}
+.offcanvas .navlinks .collapse a:hover{
+    background: var(--uniqColor);
+    color: black !important;
+}
+
+.offcanvas .navlinks li{
+    transition: 0.5s;
+}
+
+.offcanvas .navlinks li:hover .navlinks-link{
+    color: black !important;
+   
+}
+.offcanvas .dropdown-list .collapse a{
+    /* background: var(--uniqColor); */
+    color: white;
+}
+.offcanvas .dropdown-list .collapse{
+    margin-left: 0px !important;
+}
+
+.offcanvas .dropdown-list .collapse{
+    /* border: 1px solid var(--uniqColor); */
+}
+
+
+
+
+
+/* offcanvas */
+.offcanvas .navlinks li:hover{
+    background: var(--uniqColor);
+    /* letter-spacing: 1px; */
+    
+}
+.offcanvas .navlinks .collapse a{
+    transition: 0.5s;
+}
+.offcanvas .navlinks .collapse a:hover{
+    background: var(--uniqColor);
+    color: black !important;
+}
+
+.offcanvas .navlinks li{
+    transition: 0.5s;
+}
+
+.offcanvas .navlinks li:hover .navlinks-link{
+    color: black !important;
+   
+}
+.offcanvas .dropdown-list1 .collapse a{
+    /* background: var(--uniqColor); */
+    color: white;
+}
+.offcanvas .dropdown-list1 .collapse{
+    margin-left: 0px !important;
+}
+
+.offcanvas .dropdown-list .collapse{
+    /* border: 1px solid var(--uniqColor); */
+}
+
+
+
+
+/* Responsive Mobile */
+@media screen and (max-width: 425px) {
+    .modal .modal-dialog{
+        width: 100% !important;
+    }
+
+    .modal .modal-footer-buttons button{
+        width: 100% !important;
+    }
+    
+}
